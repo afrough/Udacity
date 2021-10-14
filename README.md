@@ -1,5 +1,5 @@
 # Data modeling project (postgresSQL)
-## About Project
+## About The Project
 
 This project is wokring on music Sparkify Data. 
 The goal of this project is to prepare a data platoform to do analysis on user behaviour on listeingn music. 
