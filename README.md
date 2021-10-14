@@ -13,11 +13,8 @@ We need to design a data model and Creating an ETL to read JSON file and write i
 ## Some Analysis Queryies 
 -- checking the percentage of different agent for the music platform 
 
-[37]:
 
-%sql with t as (SELECT count("userId") from songplays)  select "userAgent", round(((count("userId") * 1.0) / (select * from t)),3) * 100 from songplays group by "userAgent";
- * postgresql://student:***@127.0.0.1/sparkifydb
-16 rows affected.
+
 [37]:
 userAgent	?column?
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36"	3.600
@@ -36,8 +33,3 @@ Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:31.0) Gecko/20100101 Firefox/31.
 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"	5.500
 Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0	5.500
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36"	8.200
-
-
-
-
-
